@@ -8,9 +8,11 @@ import math
 def FactSum(n):
     x=math.factorial(n) # gets the factorial of the number in the value of n
     print("the facrtorail of the number:" ,n,"is :",x)
-    a=str(x)#convert number to string
-    b = [int(d) for d in str(a)] #convert back string split into a array of ints 
+    a=str(x)#converts number to string
+    print("this is A:",a)
+    b = [int(d) for d in str(a)] #convert back string split into a array of ints
+    print("this is b :",b) 
     ##sum(b) # sum the array of ints to get your'e sum
     print("the factorial Sum is :",sum(b))
 
-FactSum(n=100) #calling the above function
+FactSum(n=10) #calling the above function
